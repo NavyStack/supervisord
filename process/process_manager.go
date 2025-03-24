@@ -88,7 +88,7 @@ func (pm *Manager) Add(name string, proc *Process) {
 func (pm *Manager) Remove(name string) *Process {
 	pm.lock.Lock()
 	defer pm.lock.Unlock()
-	proc, _ := pm.procs[name]
+	proc := pm.procs[name]
 	delete(pm.procs, name)
 	log.Info("remove process:", name)
 	return proc

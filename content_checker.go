@@ -39,7 +39,7 @@ func (bc *BaseChecker) Write(b []byte) (int, error) {
 
 func (bc *BaseChecker) isReady() bool {
 	for _, include := range bc.includes {
-		if strings.Index(bc.data, include) == -1 {
+		if !strings.Contains(bc.data, include) {
 			return false
 		}
 	}
@@ -48,7 +48,7 @@ func (bc *BaseChecker) isReady() bool {
 
 // Check content of the input data
 func (bc *BaseChecker) Check() bool {
-	d := bc.timeoutTime.Sub(time.Now())
+	d := time.Until(bc.timeoutTime)
 	if d < 0 {
 		return false
 	}
@@ -109,7 +109,7 @@ func (tc *TCPChecker) start() {
 		b := make([]byte, 1024)
 		var err error
 		for {
-			tc.conn, err = net.Dial("tcp", fmt.Sprintf("%s:%d", tc.host, tc.port))
+			tc.conn, err = net.Dial("tcp", net.JoinHostPort(tc.host, fmt.Sprintf("%d", tc.port)))
 			if err == nil || tc.baseChecker.timeoutTime.Before(time.Now()) {
 				break
 			}

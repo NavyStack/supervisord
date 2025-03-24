@@ -220,7 +220,7 @@ func (x *CtlCommand) _startStopProcesses(rpcc *xmlrpcclient.XMLRPCClient, verb s
 				if showProcessInfo {
 					fmt.Printf("%s: ", pname)
 					if !reply.Value {
-						fmt.Printf("not ")
+						fmt.Print("not ")
 					}
 					fmt.Printf("%s\n", state)
 				}
@@ -241,9 +241,9 @@ func (x *CtlCommand) restartProcesses(rpcc *xmlrpcclient.XMLRPCClient, processes
 func (x *CtlCommand) shutdown(rpcc *xmlrpcclient.XMLRPCClient) {
 	if reply, err := rpcc.Shutdown(); err == nil {
 		if reply.Value {
-			fmt.Printf("Shut Down\n")
+			fmt.Print("Shut Down\n")
 		} else {
-			fmt.Printf("Hmmm! Something gone wrong?!\n")
+			fmt.Print("Hmmm! Something gone wrong?!\n")
 		}
 	} else {
 		os.Exit(1)
@@ -455,13 +455,12 @@ func (lc *LogtailCommand) tailLog(program string, dev string) error {
 			os.Stderr.Write(buf[0:n])
 		}
 	}
-	return nil
 }
 
 // Execute check if the number of arguments is ok
 func (wc *CmdCheckWrapperCommand) Execute(args []string) error {
 	if len(args) < wc.leastNumArgs {
-		err := fmt.Errorf("Invalid arguments.\nUsage: supervisord ctl %v", wc.usage)
+		err := fmt.Errorf("invalid arguments.\nUsage: supervisord ctl %v", wc.usage)
 		fmt.Printf("%v\n", err)
 		return err
 	}

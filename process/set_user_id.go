@@ -4,10 +4,11 @@
 package process
 
 import (
-	log "github.com/sirupsen/logrus"
 	"os/user"
 	"strconv"
 	"syscall"
+
+	log "github.com/sirupsen/logrus"
 )
 
 func setUserID(procAttr *syscall.SysProcAttr, uid uint32, gid uint32) {
