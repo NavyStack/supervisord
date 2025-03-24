@@ -260,7 +260,7 @@ func (s *Supervisor) StartAllProcesses(r *http.Request, args *struct {
 		proc.Start(args.Wait)
 	}, finishedProcCh)
 
-	for i := 0; i < n; i++ {
+	for range make([]struct{}, n) {
 		proc, ok := <-finishedProcCh
 		if ok {
 			processInfo := *getProcessInfo(proc)
@@ -286,7 +286,7 @@ func (s *Supervisor) StartProcessGroup(r *http.Request, args *StartProcessArgs, 
 		}
 	}, finishedProcCh)
 
-	for i := 0; i < n; i++ {
+	for range make([]struct{}, n) {
 		proc, ok := <-finishedProcCh
 		if ok && proc.GetGroup() == args.Name {
 			reply.AllProcessInfo = append(reply.AllProcessInfo, *getProcessInfo(proc))
@@ -320,7 +320,7 @@ func (s *Supervisor) StopProcessGroup(r *http.Request, args *StartProcessArgs, r
 		}
 	}, finishedProcCh)
 
-	for i := 0; i < n; i++ {
+	for range make([]struct{}, n) {
 		proc, ok := <-finishedProcCh
 		if ok && proc.GetGroup() == args.Name {
 			reply.AllProcessInfo = append(reply.AllProcessInfo, *getProcessInfo(proc))
@@ -339,7 +339,7 @@ func (s *Supervisor) StopAllProcesses(r *http.Request, args *struct {
 		proc.Stop(args.Wait)
 	}, finishedProcCh)
 
-	for i := 0; i < n; i++ {
+	for range make([]struct{}, n) {
 		proc, ok := <-finishedProcCh
 		if ok {
 			processInfo := *getProcessInfo(proc)

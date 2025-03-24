@@ -323,10 +323,6 @@ func (p *Process) GetPriority() int {
 	return p.config.GetInt("priority", 999)
 }
 
-func (p *Process) getNumberProcs() int {
-	return p.config.GetInt("numprocs", 1)
-}
-
 // SendProcessStdin sends data to process stdin
 func (p *Process) SendProcessStdin(chars string) error {
 	if p.stdin != nil {
@@ -486,7 +482,7 @@ func (p *Process) setProgramRestartChangeMonitor(programPath string) {
 }
 
 // wait for the started program exit
-func (p *Process) waitForExit(startSecs int64) {
+func (p *Process) waitForExit() {
 	p.cmd.Wait()
 	if p.cmd.ProcessState != nil {
 		log.WithFields(log.Fields{"program": p.GetName()}).Infof("program stopped with status:%v", p.cmd.ProcessState)
@@ -621,7 +617,7 @@ func (p *Process) run(finishCb func()) {
 
 		procExitC := make(chan struct{})
 		go func() {
-			p.waitForExit(startSecs)
+			p.waitForExit()
 			close(procExitC)
 		}()
 
@@ -851,10 +847,6 @@ func (p *Process) registerEventListener(eventListenerName string,
 		stdout,
 		p.config.GetInt("buffer_size", 100))
 	events.RegisterEventListener(eventListenerName, _events, eventListener)
-}
-
-func (p *Process) unregisterEventListener(eventListenerName string) {
-	events.UnregisterEventListener(eventListenerName)
 }
 
 func (p *Process) createStdoutLogger() logger.Logger {

@@ -722,13 +722,6 @@ func CreateSupervisorStateChangeRunning() *SupervisorStateChangeEvent {
 	return r
 }
 
-func createSupervisorStateChangeStopping() *SupervisorStateChangeEvent {
-	r := &SupervisorStateChangeEvent{}
-	r.eventType = "SUPERVISOR_STATE_CHANGE_STOPPING"
-	r.serial = nextEventSerial()
-	return r
-}
-
 // ProcessLogEvent process log event definition
 type ProcessLogEvent struct {
 	BaseEvent

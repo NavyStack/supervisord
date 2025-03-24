@@ -3,7 +3,6 @@ package config
 import (
 	"bytes"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -72,10 +71,6 @@ func (c *Entry) GetPrograms() []string {
 		return r
 	}
 	return make([]string, 0)
-}
-
-func (c *Entry) setGroup(group string) {
-	c.Group = group
 }
 
 // String dumps configuration as a string
@@ -150,7 +145,7 @@ func (c *Config) getIncludeFiles(cfg *ini.Ini) []string {
 				} else {
 					dir = filepath.Join(c.GetConfigFileDir(), filepath.Dir(f))
 				}
-				fileInfos, err := ioutil.ReadDir(dir)
+				fileInfos, err := os.ReadDir(dir) // Updated to use os.ReadDir
 				if err == nil {
 					goPattern := toRegexp(filepath.Base(f))
 					for _, fileInfo := range fileInfos {
