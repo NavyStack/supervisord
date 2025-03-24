@@ -1,14 +1,21 @@
-FROM golang:alpine AS builder
+# -------- Build Stage --------
+FROM golang:1.24.1-bookworm AS builder
 
-RUN apk add --no-cache --update git gcc rust
+ENV CGO_ENABLED=0 \
+    GOOS=linux
 
-COPY . /src
-WORKDIR /src
+WORKDIR /app
 
-RUN CGO_ENABLED=0 go build -a -ldflags "-linkmode external -extldflags -static" -o /usr/local/bin/supervisord github.com/ochinchina/supervisord
+COPY . .
 
-FROM scratch
+RUN go mod download
 
-COPY --from=builder /usr/local/bin/supervisord /usr/local/bin/supervisord
+RUN go build -tags "netgo osusergo" \
+  -ldflags="-s -w -extldflags=-static" \
+  -o supervisord
 
-ENTRYPOINT ["/usr/local/bin/supervisord"]
+FROM scratch AS final
+
+COPY --from=builder /app/supervisord /usr/local/bin/supervisord
+
+ENTRYPOINT ["supervisord"]
