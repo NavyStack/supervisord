@@ -77,6 +77,8 @@ github.com/ochinchina/supervisord/logger v0.0.0-20220721095143-c2527852d28f h1:y
 github.com/ochinchina/supervisord/logger v0.0.0-20220721095143-c2527852d28f/go.mod h1:DPIKvK0KqJdneJKrAqfLNgONWZ3m4cRAi96PG0A7deg=
 github.com/ochinchina/supervisord/signals v0.0.0-20220721095143-c2527852d28f h1:VMEbkgaQtcXv4TXpJx2j0ROHKrNX5vkmFTMVNNd/7Ek=
 github.com/ochinchina/supervisord/signals v0.0.0-20220721095143-c2527852d28f/go.mod h1:o2x4RZxVWzKvgbSOv7G8z94pITwuweY+ZkITvp/VqGY=
+github.com/ochinchina/supervisord/signals v0.0.0-20230902082938-c2cae38b7454 h1:0Gb6cjNzFckCQj2NfRtsSiuySnHJ3hI0yM/gkedt514=
+github.com/ochinchina/supervisord/signals v0.0.0-20230902082938-c2cae38b7454/go.mod h1:o2x4RZxVWzKvgbSOv7G8z94pITwuweY+ZkITvp/VqGY=
 github.com/ochinchina/supervisord/util v0.0.0-20220721095143-c2527852d28f h1:onQeBQXBdsGR9+tbuGveT+Zlfy6K7CBhCZCB2gg0j30=
 github.com/ochinchina/supervisord/util v0.0.0-20220721095143-c2527852d28f/go.mod h1:V/yb0hfd2ax3Pzn83yoxBxww4HLJ5AXYH+rQBCieqcU=
 github.com/pkg/errors v0.8.0/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
