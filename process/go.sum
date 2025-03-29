@@ -75,6 +75,8 @@ github.com/ochinchina/supervisord/faults v0.0.0-20220721095143-c2527852d28f h1:L
 github.com/ochinchina/supervisord/faults v0.0.0-20220721095143-c2527852d28f/go.mod h1:kReR3fnUfV2OHFESJ9IDriCTg/VU1D0cFfNPNOnMQCs=
 github.com/ochinchina/supervisord/logger v0.0.0-20220721095143-c2527852d28f h1:y4rKKo9PCNXONiz8O9StGV0M9zvdiKICoT46Sseh+7k=
 github.com/ochinchina/supervisord/logger v0.0.0-20220721095143-c2527852d28f/go.mod h1:DPIKvK0KqJdneJKrAqfLNgONWZ3m4cRAi96PG0A7deg=
+github.com/ochinchina/supervisord/logger v0.0.0-20230902082938-c2cae38b7454 h1:WDUJD5HxZfg1TdYSnZp585xsGQQnI78Ef6hXcP4jac0=
+github.com/ochinchina/supervisord/logger v0.0.0-20230902082938-c2cae38b7454/go.mod h1:DPIKvK0KqJdneJKrAqfLNgONWZ3m4cRAi96PG0A7deg=
 github.com/ochinchina/supervisord/signals v0.0.0-20220721095143-c2527852d28f h1:VMEbkgaQtcXv4TXpJx2j0ROHKrNX5vkmFTMVNNd/7Ek=
 github.com/ochinchina/supervisord/signals v0.0.0-20220721095143-c2527852d28f/go.mod h1:o2x4RZxVWzKvgbSOv7G8z94pITwuweY+ZkITvp/VqGY=
 github.com/ochinchina/supervisord/util v0.0.0-20220721095143-c2527852d28f h1:onQeBQXBdsGR9+tbuGveT+Zlfy6K7CBhCZCB2gg0j30=
