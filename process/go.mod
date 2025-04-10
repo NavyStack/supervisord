@@ -3,8 +3,9 @@ module github.com/ochinchina/supervisord/process
 go 1.16
 
 require (
+	github.com/hashicorp/go-envparse v0.1.0 // indirect
 	github.com/ochinchina/filechangemonitor v0.3.1
-	github.com/ochinchina/supervisord/config v0.0.0-20220721095143-c2527852d28f
+	github.com/ochinchina/supervisord/config v0.0.0-20230902082938-c2cae38b7454
 	github.com/ochinchina/supervisord/events v0.0.0-20220721095143-c2527852d28f
 	github.com/ochinchina/supervisord/faults v0.0.0-20220721095143-c2527852d28f // indirect
 	github.com/ochinchina/supervisord/logger v0.0.0-20220721095143-c2527852d28f
