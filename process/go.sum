@@ -41,6 +41,8 @@ github.com/google/go-cmp v0.5.5/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/
 github.com/google/gofuzz v1.0.0/go.mod h1:dBl0BpW6vV/+mYPU4Po3pmUjxk6FQPldtuIdl/M65Eg=
 github.com/gorilla/rpc v1.2.0 h1:WvvdC2lNeT1SP32zrIce5l0ECBfbAlmrmSBsuc57wfk=
 github.com/gorilla/rpc v1.2.0/go.mod h1:V4h9r+4sF5HnzqbwIez0fKSpANP0zlYd3qR7p36jkTQ=
+github.com/hashicorp/go-envparse v0.1.0 h1:bE++6bhIsNCPLvgDZkYqo3nA+/PFI51pkrHdmPSDFPY=
+github.com/hashicorp/go-envparse v0.1.0/go.mod h1:OHheN1GoygLlAkTlXLXvAdnXdZxy8JUweQ1rAXx1xnc=
 github.com/jpillora/backoff v1.0.0/go.mod h1:J/6gKK9jxlEcS3zixgDgUAsiuZ7yrSoa/FX5e0EB2j4=
 github.com/json-iterator/go v1.1.6/go.mod h1:+SdeFBvtyEkXs7REEP0seUULqWtbJapLOCVDaaPEHmU=
 github.com/json-iterator/go v1.1.10/go.mod h1:KdQUCv79m/52Kvf8AW2vK1V8akMuk1QjK/uOdHXbAo4=
@@ -69,6 +71,8 @@ github.com/ochinchina/gorilla-xmlrpc v0.0.0-20171012055324-ecf2fe693a2c h1:6xgMU
 github.com/ochinchina/gorilla-xmlrpc v0.0.0-20171012055324-ecf2fe693a2c/go.mod h1:/gFmJ8Das0jFgYxzt/RkvAO62T/ZPcyTaZlOkEBu/jw=
 github.com/ochinchina/supervisord/config v0.0.0-20220721095143-c2527852d28f h1:gIHtOgmQQPYdXAXlNWzuS5F2QIGVO2I5FCy002QcQTs=
 github.com/ochinchina/supervisord/config v0.0.0-20220721095143-c2527852d28f/go.mod h1:jMN/SL0T6GCWWG/dD7Les9iPqjQ2OjEVyBWx8c9RJqI=
+github.com/ochinchina/supervisord/config v0.0.0-20250610070102-16cb640325b3 h1:sS779KsfAxe1GTPqhf/kg6d93C0fhKsLGw5g3a0cSnc=
+github.com/ochinchina/supervisord/config v0.0.0-20250610070102-16cb640325b3/go.mod h1:mqecklnWD8/xGoYDUYpbMLpctWGX1EJCxoDqZE8LHiY=
 github.com/ochinchina/supervisord/events v0.0.0-20220721095143-c2527852d28f h1:4lMzp4SZ74EPwBHHB4yXj4F8ZiYlMZBIoUcXY9aaRvI=
 github.com/ochinchina/supervisord/events v0.0.0-20220721095143-c2527852d28f/go.mod h1:I+vx/d8jVSVe0nmhaJUPuouUnhpfUUiUbDciSDViL5I=
 github.com/ochinchina/supervisord/faults v0.0.0-20220721095143-c2527852d28f h1:LVTLViuwGGKrIELAwjbrF9hqTlLH1GuMdGUpUWTH62s=
@@ -79,6 +83,8 @@ github.com/ochinchina/supervisord/signals v0.0.0-20220721095143-c2527852d28f h1:
 github.com/ochinchina/supervisord/signals v0.0.0-20220721095143-c2527852d28f/go.mod h1:o2x4RZxVWzKvgbSOv7G8z94pITwuweY+ZkITvp/VqGY=
 github.com/ochinchina/supervisord/util v0.0.0-20220721095143-c2527852d28f h1:onQeBQXBdsGR9+tbuGveT+Zlfy6K7CBhCZCB2gg0j30=
 github.com/ochinchina/supervisord/util v0.0.0-20220721095143-c2527852d28f/go.mod h1:V/yb0hfd2ax3Pzn83yoxBxww4HLJ5AXYH+rQBCieqcU=
+github.com/ochinchina/supervisord/util v0.0.0-20250610055946-d5a5470d11af h1:td7Ds2AcCkBeYUI/Cng86snOxtsbkH7Bjipw2YrM05g=
+github.com/ochinchina/supervisord/util v0.0.0-20250610055946-d5a5470d11af/go.mod h1:V/yb0hfd2ax3Pzn83yoxBxww4HLJ5AXYH+rQBCieqcU=
 github.com/pkg/errors v0.8.0/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
@@ -111,12 +117,15 @@ github.com/sirupsen/logrus v1.4.2/go.mod h1:tLMulIdttU9McNUspp0xgXVQah82FyeX6Mwd
 github.com/sirupsen/logrus v1.6.0/go.mod h1:7uNnSEd1DgxDLC74fIahvMZmmYsHGZGEOFrfsX/uA88=
 github.com/sirupsen/logrus v1.8.1 h1:dJKuHgqk1NNQlqoA6BTlM1Wf9DOH3NBjQyu0h9+AZZE=
 github.com/sirupsen/logrus v1.8.1/go.mod h1:yWOB1SBYBC5VeMP7gHvWumXLIWorT60ONWic61uBYv0=
+github.com/sirupsen/logrus v1.9.3 h1:dueUQJ1C2q9oE3F7wvmSGAaVtTmUizReu6fjN8uqzbQ=
+github.com/sirupsen/logrus v1.9.3/go.mod h1:naHLuLoDiP4jHNo9R0sCBMtWGeIprob74mVsIT4qYEQ=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/objx v0.1.1/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.4.0 h1:2E4SXV/wtOkTonXsotYi4li6zVWxYlZuYNCXe9XRJyk=
 github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81PSLYec5m4=
+github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 golang.org/x/crypto v0.0.0-20180904163835-0709b304e793/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9/go.mod h1:LzIPMQfyMNhhGPhUkYOs5KpL4U8rLKemX1yGLhDgUto=
@@ -144,6 +153,8 @@ golang.org/x/sys v0.0.0-20200625212154-ddb9806d33ae/go.mod h1:h1NjWce9XRLGQEsW7w
 golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20210603081109-ebe580a85c40 h1:JWgyZ1qgdTaF3N3oxC+MdTV7qvEEgHo3otj+HB5CM7Q=
 golang.org/x/sys v0.0.0-20210603081109-ebe580a85c40/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/sys v0.33.0 h1:q3i8TbbEz+JRD9ywIRlyRAQbM0qF7hu24q3teo2hbuw=
+golang.org/x/sys v0.33.0/go.mod h1:BJP2sWEmIv4KK5OTEluFJCKSidICx8ciO85XgH3Ak8k=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.2/go.mod h1:bEr9sfX3Q8Zfm5fL9x+3itogRgK3+ptLWKqgva+5dAk=
 golang.org/x/tools v0.0.0-20180917221912-90fa682c2a6e/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=
@@ -167,3 +178,4 @@ gopkg.in/yaml.v2 v2.2.4/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v2 v2.2.5/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v2 v2.3.0 h1:clyUAQHOM3G0M3f5vQj7LuJrETvjVot3Z5el9nffUtU=
 gopkg.in/yaml.v2 v2.3.0/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
+gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
