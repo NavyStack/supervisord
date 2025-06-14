@@ -13,7 +13,7 @@ require (
 	github.com/ochinchina/go-ini v1.0.1
 	github.com/ochinchina/go-reaper v0.0.0-20181016012355-6b11389e79fc
 	github.com/ochinchina/gorilla-xmlrpc v0.0.0-20171012055324-ecf2fe693a2c
-	github.com/ochinchina/supervisord/config v0.0.0-20230902082938-c2cae38b7454
+	github.com/ochinchina/supervisord/config v0.0.0-20250610070102-16cb640325b3
 	github.com/ochinchina/supervisord/events v0.0.0-20230902082938-c2cae38b7454
 	github.com/ochinchina/supervisord/faults v0.0.0-20230902082938-c2cae38b7454
 	github.com/ochinchina/supervisord/logger v0.0.0-20230902082938-c2cae38b7454
