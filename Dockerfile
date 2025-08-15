@@ -1,5 +1,5 @@
 # -------- Build Stage --------
-FROM golang:1.24.1-bookworm AS builder
+FROM golang:1.25.0-bookworm AS builder
 
 ENV CGO_ENABLED=0 \
     GOOS=linux
