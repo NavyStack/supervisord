@@ -18,7 +18,7 @@ require (
 	github.com/ochinchina/supervisord/faults v0.0.0-20230902082938-c2cae38b7454
 	github.com/ochinchina/supervisord/logger v0.0.0-20230902082938-c2cae38b7454
 	github.com/ochinchina/supervisord/process v0.0.0-20230902082938-c2cae38b7454
-	github.com/ochinchina/supervisord/signals v0.0.0-20230902082938-c2cae38b7454
+	github.com/ochinchina/supervisord/signals v0.0.0-20250610070102-16cb640325b3
 	github.com/ochinchina/supervisord/types v0.0.0-20230902082938-c2cae38b7454
 	github.com/ochinchina/supervisord/util v0.0.0-20230902082938-c2cae38b7454
 	github.com/ochinchina/supervisord/xmlrpcclient v0.0.0-20230902082938-c2cae38b7454
