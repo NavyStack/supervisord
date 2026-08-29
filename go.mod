@@ -17,7 +17,7 @@ require (
 	github.com/ochinchina/supervisord/events v0.0.0-20230902082938-c2cae38b7454
 	github.com/ochinchina/supervisord/faults v0.0.0-20230902082938-c2cae38b7454
 	github.com/ochinchina/supervisord/logger v0.0.0-20230902082938-c2cae38b7454
-	github.com/ochinchina/supervisord/process v0.0.0-20230902082938-c2cae38b7454
+	github.com/ochinchina/supervisord/process v0.0.0-20260827023808-368eb5d6ad92
 	github.com/ochinchina/supervisord/signals v0.0.0-20230902082938-c2cae38b7454
 	github.com/ochinchina/supervisord/types v0.0.0-20230902082938-c2cae38b7454
 	github.com/ochinchina/supervisord/util v0.0.0-20230902082938-c2cae38b7454
