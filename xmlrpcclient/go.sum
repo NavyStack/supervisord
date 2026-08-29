@@ -4,5 +4,7 @@ github.com/ochinchina/gorilla-xmlrpc v0.0.0-20171012055324-ecf2fe693a2c h1:6xgMU
 github.com/ochinchina/gorilla-xmlrpc v0.0.0-20171012055324-ecf2fe693a2c/go.mod h1:/gFmJ8Das0jFgYxzt/RkvAO62T/ZPcyTaZlOkEBu/jw=
 github.com/ochinchina/supervisord/types v0.0.0-20230902082938-c2cae38b7454 h1:Gy51HtYN8TBQJBQxqH8hFgPNIeo7gQZDQL4p/7wosF4=
 github.com/ochinchina/supervisord/types v0.0.0-20230902082938-c2cae38b7454/go.mod h1:z9lBlb5SzXJTO1oZHCUfYSMa+UZr86pZ0xPoAvswa6k=
+github.com/ochinchina/supervisord/types v0.0.0-20260827023808-368eb5d6ad92 h1:xkRgslUx2W4Y9ApezrLCxWmi2LCgzrWFpHTlFgs2tjQ=
+github.com/ochinchina/supervisord/types v0.0.0-20260827023808-368eb5d6ad92/go.mod h1:ArRhw87ZjjViCRytndATQgidDqXhhlC42z7Ny9fHjrM=
 github.com/rogpeppe/go-charset v0.0.0-20190617161244-0dc95cdf6f31 h1:DE4LcMKyqAVa6a0CGmVxANbnVb7stzMmPkQiieyNmfQ=
 github.com/rogpeppe/go-charset v0.0.0-20190617161244-0dc95cdf6f31/go.mod h1:qgYeAmZ5ZIpBWTGllZSQnw97Dj+woV0toclVaRGI8pc=
